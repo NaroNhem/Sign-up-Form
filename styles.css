@@ -1,0 +1,86 @@
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    height:auto;
+    width: 60%;
+    background-image: url("images/michael-dziedzic-yB1LmohCtEU-unsplash\ \(1\).jpg");
+    background-size: 50rem ;
+    background-position: 0%;
+    background-repeat: no-repeat;
+    align-items:flex-start;
+}
+
+.logo {
+    margin-top: 10rem;
+    background-color: gray;
+    background: rgba(19, 18, 18, 0.5);
+    height: auto;
+    width:100%;
+}
+.logo-text {
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    height: fit-content;
+    font-size: 2rem;
+}
+
+.body {
+    display: flex;
+    background-color: #12171b;;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.text-flow{
+    width: 70%;
+    color:white;
+}
+
+
+.form-container {
+    height: 29vh;
+    background-color: #0f1214;
+    width: 100%;
+    color: white;
+}
+
+
+.form {
+    display: flex;
+    padding-left: 3vh;
+    width: 90%;
+}
+.left {
+    padding-left: 3vh;
+}
+input {
+   display: flex;
+   width: 20rem;
+   margin: 6px;
+   margin-left: 0%;
+}
+
+.input {
+    margin:11px;
+    margin-left: 0%;
+}
+.leftForm {
+    margin-right: 20%;
+}
+
+.login{
+    height: 20vh;
+    color: white;
+}
+button {
+    width: 8rem;
+    height: 2rem;
+}
