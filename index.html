@@ -6,20 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="header">
         <div class="logo">
             <div class="logo-text">
-                <p>YBC</p>
+                <p><img src="images/kisspng-green-tea-matcha-whisk-waste-sprout-wireframe-development-5bf9e48d466079.2027861515431036292883.png" alt="leaf-logo" id="logo">Cerebii</p>
+                
             </div>            
+        </div>
+        <div class="footer">
+            <p>Photo by <a href="https://unsplash.com/@lazycreekimages" target="_blank">Michael Dziedzic</a> on Unsplash</p>
+            
         </div>
     </div>
     <div class="body">
         <div class="text-flow left">
             <h2>This is not a real online service! You know you need something like this in your life to help realize your deepest dreams.</h2>
             <p>Sign up <em>now</em> to get started</em></p>
-            <p>You know what to do.</p>
+            <p>You <em>know</em> what to do.</p>
         </div>
         <div class="form-container">
             <h2 class="left">Lets do this!</h2>
@@ -31,25 +37,26 @@
                     </div>
                     <div class="input">
                         <label for="email">Email</label>
-                        <input type="text" id="email">
+                        <input type="email" id="email" name="email">
                     </div>
                     <div class="input">
                         <label for="password">Password</label>
-                        <input type="text" id="password">
+                        <input type="password" id="password" minlength="8">
+                        <p id="error"></p>
                     </div>
                 </div>
                 <div class="rightForm">
                     <div class="input">
                         <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName">
+                        <input type="text" id="lastName" >
                     </div>
                     <div class="input">
                         <label for="phoneNumber">Phone Number</label>
-                        <input type="text" id="phoneNumber">
+                        <input type="text" id="phoneNumber" >
                     </div>
                     <div class="input">
                         <label for="confirmPass">Confirm Password</label>
-                        <input type="text" id="confirmPass">
+                        <input type="password" id="confirmPass" minlength="8">
                     </div>
                 </div>
                 
@@ -57,8 +64,8 @@
             </div>
         </div>
         <div class="login left"> 
-            <button>Create Account</button>
-            <p>Already have an account? <a href="">Login</a></p>
+            <button type="button" id="create">Create Account</button>
+            <p>Already have an account? <a href="" id="login">Login</a></p>
         </div>
        
     </div>

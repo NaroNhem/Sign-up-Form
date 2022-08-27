@@ -1,11 +1,13 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body {
     display: flex;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header {
     display: flex;
+    flex-direction: column;
     height:auto;
     width: 60%;
     background-image: url("images/michael-dziedzic-yB1LmohCtEU-unsplash\ \(1\).jpg");
@@ -13,6 +15,7 @@ body {
     background-position: 0%;
     background-repeat: no-repeat;
     align-items:flex-start;
+    justify-content: space-between;
 }
 
 .logo {
@@ -27,14 +30,19 @@ body {
     font-weight: bold;
     text-align: center;
     height: fit-content;
-    font-size: 2rem;
+    font-size: 3.5rem;
 }
-
+.footer {
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+}
 .body {
     display: flex;
     background-color: #12171b;;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     justify-content: space-evenly;
     flex-direction: column;
 }
@@ -50,6 +58,7 @@ body {
     background-color: #0f1214;
     width: 100%;
     color: white;
+    box-shadow: 4px 3px 5px rgb(255 255 255 / 30%);
 }
 
 
@@ -66,8 +75,21 @@ input {
    width: 20rem;
    margin: 6px;
    margin-left: 0%;
+   border-radius: 2px;
+   border: 1px solid;
 }
 
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: #1e280f;
+}
+label {
+    text-transform: uppercase;
+    font-size: 14px;
+}
 .input {
     margin:11px;
     margin-left: 0%;
@@ -81,6 +103,39 @@ input {
     color: white;
 }
 button {
-    width: 8rem;
-    height: 2rem;
+    width:12rem;
+    height: 3rem;
+    font-size: 16px;
+    border: 1px solid #1e280f;
+    border-radius: 4px;
+    background: #1e280f;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+#login {
+    color: #b9cf8e;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #b9cf8e;
+    color:#12171b;
+    cursor: pointer;
+}
+
+#logo {
+    width: 70px;   
+    height: 70px;
+    margin-right: 10px;
+}
+
+#error {
+    margin-top: 0%;
+    color: red;
+    font-size: 13px;
 }
